@@ -1,7 +1,7 @@
-import "./App.css";
+import "./App.scss";
 
 function App() {
-  return <div className="App">Movie App</div>;
+  return <div>Movie App</div>;
 }
 
 export default App;
