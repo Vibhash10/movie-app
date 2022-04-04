@@ -12,17 +12,19 @@ function App() {
     <div className="App">
       <Router>
         <Header></Header>
-        <Switch>
-          <Route path="/" exact>
-            <Home />
-          </Route>
-          <Route path="/movie/:imdbID">
-            <MovieDetail />
-          </Route>
-          <Route>
-            <PageNotFound />
-          </Route>
-        </Switch>
+        <div className="container">
+          <Switch>
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/movie/:imdbID">
+              <MovieDetail />
+            </Route>
+            <Route>
+              <PageNotFound />
+            </Route>
+          </Switch>
+        </div>
         <Footer></Footer>
       </Router>
     </div>
